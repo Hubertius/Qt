@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/root/images">
+        <file>Images/icons8-control-panel-64.png</file>
+        <file>Images/icons8-disconnected-64.png</file>
+        <file>Images/icons8-connect-64.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Images/icons8-send-letter-100.png</file>
+        <file>Images/icons8-info-128.png</file>
+        <file>Images/icons8-eraser-64.png</file>
+    </qresource>
+</RCC>

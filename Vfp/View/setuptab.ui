@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetupTab</class>
+ <widget class="QWidget" name="SetupTab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>783</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="gbTcIp">
+     <property name="title">
+      <string>Tcp/Ip</string>
+     </property>
+     <layout class="QHBoxLayout" name="loTcIpGroup">
+      <item>
+       <layout class="QHBoxLayout" name="loConnect">
+        <item>
+         <widget class="QPushButton" name="connectButton">
+          <property name="text">
+           <string>Connect</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../VfpResources.qrc">
+            <normaloff>:/root/images/Images/icons8-connect-64.png</normaloff>:/root/images/Images/icons8-connect-64.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="disconnectButton">
+          <property name="text">
+           <string>Disconnect</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../VfpResources.qrc">
+            <normaloff>:/root/images/Images/icons8-disconnected-64.png</normaloff>:/root/images/Images/icons8-disconnected-64.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="loAdress">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lbIpAdress">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>&amp;Ip Adress</string>
+          </property>
+          <property name="buddy">
+           <cstring>editIpAdress</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="editIpAdress"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="loPort">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lbPort">
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>&amp;Port</string>
+          </property>
+          <property name="buddy">
+           <cstring>editPort</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="editPort"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="gbDirectCommands">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Direct Commands</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QComboBox" name="cmdCommandBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>13</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sendButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Send</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../VfpResources.qrc">
+          <normaloff>:/Images/icons8-send-letter-100.png</normaloff>:/Images/icons8-send-letter-100.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>13</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="receiveButton">
+        <property name="text">
+         <string>Receive</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../VfpResources.qrc">
+          <normaloff>:/Images/icons8-info-128.png</normaloff>:/Images/icons8-info-128.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>38</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="gbInstrumentBox">
+     <property name="title">
+      <string>Instrument Messages</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item alignment="Qt::AlignLeft|Qt::AlignTop">
+         <widget class="QTextEdit" name="textInstrumentBox">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>250</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>519</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignVCenter">
+         <widget class="QPushButton" name="btnClear">
+          <property name="text">
+           <string>Clear</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../VfpResources.qrc">
+            <normaloff>:/Images/icons8-eraser-64.png</normaloff>:/Images/icons8-eraser-64.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../VfpResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
